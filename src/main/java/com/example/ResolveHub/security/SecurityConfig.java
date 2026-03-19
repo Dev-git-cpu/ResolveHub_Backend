@@ -64,7 +64,7 @@ public class SecurityConfig {
                 "Content-Type",
                 "Accept"
         ));
-        configuration.setExposedHeaders(List.of("Authorization"));
+        configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
         configuration.setMaxAge(3600L);
 
