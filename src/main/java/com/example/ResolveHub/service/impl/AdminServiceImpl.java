@@ -81,6 +81,7 @@ public class AdminServiceImpl implements AdminService {
         ComplaintUpdateResponse response = new ComplaintUpdateResponse();
 
         response.setId(complaint.getId());
+        response.setName(complaint.getUser().getName());
         response.setCategory(complaint.getCategory());
         response.setTitle(complaint.getTitle());
         response.setDescription(complaint.getDescription());
